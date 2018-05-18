@@ -10,7 +10,7 @@ pipeline {
         }
         stage('error') {
           steps {
-            sh 'docker ps -a'
+            sh 'docker -v'
           }
         }
       }

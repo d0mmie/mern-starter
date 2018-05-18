@@ -10,7 +10,7 @@ pipeline {
         }
         stage('error') {
           steps {
-            sh 'docker -v'
+            sh 'docker-compose -v'
           }
         }
       }

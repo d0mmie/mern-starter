@@ -8,9 +8,9 @@ pipeline {
             echo 'Let\'s deploy'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
-            sh 'docker-compose up -d'
+            sh 'docker ps -a'
           }
         }
       }
